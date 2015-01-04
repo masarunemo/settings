@@ -62,6 +62,7 @@
 	<name>minizen cursor</name>
 	<appendix>Cursor Keys</appendix>
 	<identifier>cursor.sx</identifier>
+
 	<autogen>__KeyToKey__  KeyCode::E, ModifierFlag::XR,  KeyCode::CURSOR_UP</autogen>
 	<autogen>__KeyToKey__  KeyCode::S, ModifierFlag::XR,  KeyCode::CURSOR_LEFT</autogen>
 	<autogen>__KeyToKey__  KeyCode::D, ModifierFlag::XR,  KeyCode::CURSOR_DOWN</autogen>
@@ -70,30 +71,23 @@
 	<autogen>__KeyToKey__  KeyCode::S, ModifierFlag::XR2,  KeyCode::CURSOR_LEFT</autogen>
 	<autogen>__KeyToKey__  KeyCode::D, ModifierFlag::XR2,  KeyCode::CURSOR_DOWN</autogen>
 	<autogen>__KeyToKey__  KeyCode::F, ModifierFlag::XR2,  KeyCode::CURSOR_RIGHT</autogen>
-	</item>
-
-
-
-	<item>
-	<name>minizen Delete Home End PgUp PgDn</name>
-	<appendix>Delete Home End PgUp PgDn</appendix>
-	<identifier>6keys.minizen.sx</identifier>
 	<autogen>__KeyToKey__  KeyCode::J, ModifierFlag::XR,  KeyCode::FORWARD_DELETE</autogen>
-	<autogen>__KeyToKey__  KeyCode::SPACE, ModifierFlag::XR,  KeyCode::DELETE</autogen>
-	<autogen>__KeyToKey__  KeyCode::I, ModifierFlag::XR,  KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L</autogen>
-	<autogen>__KeyToKey__  KeyCode::K, ModifierFlag::XR,  KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L</autogen>
-	<autogen>__KeyToKey__  KeyCode::O, ModifierFlag::XR,  KeyCode::PAGEUP</autogen>
-	<autogen>__KeyToKey__  KeyCode::L, ModifierFlag::XR,  KeyCode::PAGEDOWN</autogen>
+    
+	<autogen>__KeyToKey__  KeyCode::I, ModifierFlag::XR,  KeyCode::CURSOR_LEFT ,ModifierFlag::COMMAND_L </autogen>
+	<autogen>__KeyToKey__  KeyCode::K, ModifierFlag::XR,  KeyCode::CURSOR_RIGHT ,ModifierFlag::COMMAND_L</autogen>
+    <autogen>__KeyToKey__  KeyCode::O, ModifierFlag::XR,  KeyCode::PAGEUP,ModifierFlag::OPTION_L</autogen>
+    <autogen>__KeyToKey__  KeyCode::L, ModifierFlag::XR,  KeyCode::PAGEDOWN,ModifierFlag::OPTION_L</autogen>
 	</item>
 
 	<item>
-	<name>ZenEnter ZenBackspace</name>
+    <name>Enter/Backspace/Delete/Tab</name>
 	<appendix>Enter Backspace</appendix>
 	<identifier>basic.minizen.sx</identifier>
-	<autogen>__KeyToKey__  KeyCode::SEMICOLON, ModifierFlag::XR,  KeyCode::ENTER</autogen>
-	<autogen>__KeyToKey__  KeyCode::SPACE, ModifierFlag::XR,  KeyCode::DELETE</autogen>
+    <autogen>__KeyToKey__  KeyCode::SEMICOLON, ModifierFlag::XR,  KeyCode::RETURN</autogen>
+    <autogen>__KeyToKey__  KeyCode::SPACE, ModifierFlag::XR,  KeyCode::DELETE</autogen>
 	<autogen>__KeyToKey__  KeyCode::SPACE, ModifierFlag::XR2,  KeyCode::DELETE</autogen>
-	</item>
+    <autogen>__KeyToKey__  KeyCode::SPACE, ModifierFlag::XL,  KeyCode::TAB</autogen>
+    </item>
 
 	<item>
 	<name>Ten Key</name>
@@ -142,26 +136,25 @@
 	</item>
 
 
-
 	<item>
 	<name>Mouse movements</name>
 	<appendix>Mouse movements</appendix>
 	<identifier>mousemoe.minizen.sx</identifier>
-	<autogen>__KeyToKey__  KeyCode::E, KeyCode::VK_MOUSEKEY_UP</autogen>
-	<autogen>__KeyToKey__  KeyCode::S, KeyCode::VK_MOUSEKEY_LEFT</autogen>
-	<autogen>__KeyToKey__  KeyCode::D, KeyCode::VK_MOUSEKEY_DOWN</autogen>
-	<autogen>__KeyToKey__  KeyCode::F, KeyCode::VK_MOUSEKEY_RIGHT</autogen>
+	<autogen>__KeyToKey__  KeyCode::E,ModifierFlag::XL, KeyCode::VK_MOUSEKEY_UP,ModifierFlag::XL</autogen>
+	<autogen>__KeyToKey__  KeyCode::S,ModifierFlag::XL, KeyCode::VK_MOUSEKEY_LEFT,ModifierFlag::XL</autogen>
+	<autogen>__KeyToKey__  KeyCode::D,ModifierFlag::XL, KeyCode::VK_MOUSEKEY_DOWN,ModifierFlag::XL</autogen>
+	<autogen>__KeyToKey__  KeyCode::F,ModifierFlag::XL, KeyCode::VK_MOUSEKEY_RIGHT,ModifierFlag::XL</autogen>
 	</item>
 
 	<item>
 	<name>Mouse</name>
 	<appendix>Mouse with XL</appendix>
 	<identifier>mouse.minizen.sx</identifier>
-	<autogen>__KeyToKey__  KeyCode::A, ModifierFlag::XL,  KeyCode::VK_MOUSEKEY_BUTTON_LEFT</autogen>
-	<autogen>__KeyToKey__  KeyCode::Z, ModifierFlag::XL,  KeyCode::VK_MOUSEKEY_BUTTON_RIGHT</autogen>
-	<autogen>__KeyToKey__  KeyCode::G, ModifierFlag::XL,  KeyCode::VK_MOUSEKEY_BUTTON_MIDDLE</autogen>
-	<autogen>__KeyToKey__  KeyCode::T, ModifierFlag::XL,  KeyCode::VK_MOUSEKEY_SCROLL_DOWN</autogen>
-	<autogen>__KeyToKey__  KeyCode::V, ModifierFlag::XL,  KeyCode::VK_MOUSEKEY_SCROLL_UP</autogen>
+	<autogen>__KeyToKey__  KeyCode::A, ModifierFlag::XL,  KeyCode::VK_MOUSEKEY_BUTTON_LEFT, ModifierFlag::XL</autogen>
+	<autogen>__KeyToKey__  KeyCode::Z, ModifierFlag::XL,  KeyCode::VK_MOUSEKEY_BUTTON_RIGHT, ModifierFlag::XL</autogen>
+	<autogen>__KeyToKey__  KeyCode::G, ModifierFlag::XL,  KeyCode::VK_MOUSEKEY_BUTTON_MIDDLE, ModifierFlag::XL</autogen>
+	<autogen>__KeyToKey__  KeyCode::T, ModifierFlag::XL,  KeyCode::VK_MOUSEKEY_SCROLL_DOWN, ModifierFlag::XL</autogen>
+	<autogen>__KeyToKey__  KeyCode::V, ModifierFlag::XL,  KeyCode::VK_MOUSEKEY_SCROLL_UP, ModifierFlag::XL</autogen>
 	</item>
 
 	</item>

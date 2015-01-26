@@ -43,7 +43,8 @@ zstyle ':completion:*:default' menu select=1
 # こうすると、 Ctrl-W でカーソル前の1単語を削除したとき、 / までで削除が止まる
 WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
 
-source /etc/zsh_command_not_found
-
+if [ -e zsh_command_not_found ]; then
+	source /etc/zsh_command_not_found
+fi
 
 alias la='ls -la'

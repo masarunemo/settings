@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+<root>
+<item>
+<name>minizen</name>
+
+<modifierdef>XR</modifierdef>
+<modifierdef>XR2</modifierdef>
+<modifierdef>XL</modifierdef>
+<modifierdef>XL2</modifierdef>
+
+
+
+<item>
+<name>X Modifiers</name> 
+<appendix>SX modifiers</appendix>
+<identifier>base.sx</identifier>
+
+	<!--
+	<device_only>
+	DeviceVendor::APPLE_INC,DeviceProduct::Apple_internal_keyboard
+	</device_only>
+	-->
+
+	<autogen>
+	__KeyOverlaidModifier__
+	KeyCode::JIS_KANA,
+	KeyCode::VK_MODIFIER_XR,
+	KeyCode::JIS_KANA
+	</autogen>
+	<autogen>
+	__KeyOverlaidModifier__
+	KeyCode::JIS_EISUU,
+	KeyCode::VK_MODIFIER_XL,
+	KeyCode::JIS_EISUU
+	</autogen>
+	<autogen>
+	__KeyOverlaidModifier__
+	KeyCode::COMMAND_R,
+	KeyCode::VK_MODIFIER_XR2,
+	KeyCode::COMMAND_R
+	</autogen>
+
+	<!--
+	<autogen>
+	__KeyOverlaidModifier__
+	KeyCode::CONTROL_L,
+	KeyCode::COMMAND_L,
+	KeyCode::VK_NONE
+	</autogen>
+
+	<autogen>
+	__KeyOverlaidModifier__
+	KeyCode::COMMAND_L,
+	KeyCode::CONTROL_L,
+	KeyCode::VK_NONE
+	</autogen>
+	-->
+
+	</item> <!-- /X modifiers -->
+
+	<item>
+	<name>minizen cursor</name>
+	<appendix>Cursor Keys</appendix>
+	<identifier>cursor.sx</identifier>
+
+	<autogen>__KeyToKey__  KeyCode::E, ModifierFlag::XR,  KeyCode::CURSOR_UP</autogen>
+	<autogen>__KeyToKey__  KeyCode::S, ModifierFlag::XR,  KeyCode::CURSOR_LEFT</autogen>
+	<autogen>__KeyToKey__  KeyCode::D, ModifierFlag::XR,  KeyCode::CURSOR_DOWN</autogen>
+	<autogen>__KeyToKey__  KeyCode::F, ModifierFlag::XR,  KeyCode::CURSOR_RIGHT</autogen>
+	<autogen>__KeyToKey__  KeyCode::E, ModifierFlag::XR2,  KeyCode::CURSOR_UP</autogen>
+	<autogen>__KeyToKey__  KeyCode::S, ModifierFlag::XR2,  KeyCode::CURSOR_LEFT</autogen>
+	<autogen>__KeyToKey__  KeyCode::D, ModifierFlag::XR2,  KeyCode::CURSOR_DOWN</autogen>
+	<autogen>__KeyToKey__  KeyCode::F, ModifierFlag::XR2,  KeyCode::CURSOR_RIGHT</autogen>
+	<autogen>__KeyToKey__  KeyCode::J, ModifierFlag::XR,  KeyCode::FORWARD_DELETE</autogen>
+    
+	<autogen>__KeyToKey__  KeyCode::I, ModifierFlag::XR,  KeyCode::CURSOR_LEFT ,ModifierFlag::COMMAND_L </autogen>
+	<autogen>__KeyToKey__  KeyCode::K, ModifierFlag::XR,  KeyCode::CURSOR_RIGHT ,ModifierFlag::COMMAND_L</autogen>
+    <autogen>__KeyToKey__  KeyCode::O, ModifierFlag::XR,  KeyCode::PAGEUP,ModifierFlag::OPTION_L</autogen>
+    <autogen>__KeyToKey__  KeyCode::L, ModifierFlag::XR,  KeyCode::PAGEDOWN,ModifierFlag::OPTION_L</autogen>
+	</item>
+
+	<item>
+    <name>Enter/Backspace/Delete/Tab</name>
+	<appendix>Enter Backspace</appendix>
+	<identifier>basic.minizen.sx</identifier>
+    <autogen>__KeyToKey__  KeyCode::SEMICOLON, ModifierFlag::XR,  KeyCode::RETURN</autogen>
+    <autogen>__KeyToKey__  KeyCode::SPACE, ModifierFlag::XR,  KeyCode::DELETE</autogen>
+	<autogen>__KeyToKey__  KeyCode::SPACE, ModifierFlag::XR2,  KeyCode::DELETE</autogen>
+    <autogen>__KeyToKey__  KeyCode::SPACE, ModifierFlag::XL,  KeyCode::TAB</autogen>
+    </item>
+
+	<item>
+	<name>Ten Key</name>
+	<appendix>Ten Key with XR2</appendix>
+	<identifier>tenkey.minizen.sx</identifier>
+	<autogen>__KeyToKey__  KeyCode::N, ModifierFlag::XR2,  KeyCode::KEYPAD_0</autogen>
+	<autogen>__KeyToKey__  KeyCode::M, ModifierFlag::XR2,  KeyCode::KEYPAD_1</autogen>
+	<autogen>__KeyToKey__  KeyCode::COMMA, ModifierFlag::XR2,  KeyCode::KEYPAD_2</autogen>
+	<autogen>__KeyToKey__  KeyCode::DOT, ModifierFlag::XR2,  KeyCode::KEYPAD_3</autogen>
+	<autogen>__KeyToKey__  KeyCode::J, ModifierFlag::XR2,  KeyCode::KEYPAD_4</autogen>
+	<autogen>__KeyToKey__  KeyCode::K, ModifierFlag::XR2,  KeyCode::KEYPAD_5</autogen>
+	<autogen>__KeyToKey__  KeyCode::L, ModifierFlag::XR2,  KeyCode::KEYPAD_6</autogen>
+	<autogen>__KeyToKey__  KeyCode::U, ModifierFlag::XR2,  KeyCode::KEYPAD_7</autogen>
+	<autogen>__KeyToKey__  KeyCode::I, ModifierFlag::XR2,  KeyCode::KEYPAD_8</autogen>
+	<autogen>__KeyToKey__  KeyCode::O, ModifierFlag::XR2,  KeyCode::KEYPAD_9</autogen>
+	</item>
+
+	<item>
+	<name>FunctionKey</name>
+	<appendix>Function Keys</appendix>
+	<identifier>functionkey.minizen.sx</identifier>
+	<autogen>__KeyToKey__  KeyCode::KEY_1, ModifierFlag::XL,  KeyCode::F1</autogen>
+	<autogen>__KeyToKey__  KeyCode::KEY_1, ModifierFlag::XR,  KeyCode::F1</autogen>
+	<autogen>__KeyToKey__  KeyCode::KEY_2, ModifierFlag::XL,  KeyCode::F2</autogen>
+	<autogen>__KeyToKey__  KeyCode::KEY_2, ModifierFlag::XR,  KeyCode::F2</autogen>
+	<autogen>__KeyToKey__  KeyCode::KEY_3, ModifierFlag::XL,  KeyCode::F3</autogen>
+	<autogen>__KeyToKey__  KeyCode::KEY_3, ModifierFlag::XR,  KeyCode::F3</autogen>
+	<autogen>__KeyToKey__  KeyCode::KEY_4, ModifierFlag::XL,  KeyCode::F4</autogen>
+	<autogen>__KeyToKey__  KeyCode::KEY_4, ModifierFlag::XR,  KeyCode::F4</autogen>
+	<autogen>__KeyToKey__  KeyCode::KEY_5, ModifierFlag::XL,  KeyCode::F5</autogen>
+	<autogen>__KeyToKey__  KeyCode::KEY_5, ModifierFlag::XR,  KeyCode::F5</autogen>
+	<autogen>__KeyToKey__  KeyCode::KEY_6, ModifierFlag::XL,  KeyCode::F6</autogen>
+	<autogen>__KeyToKey__  KeyCode::KEY_6, ModifierFlag::XR,  KeyCode::F6</autogen>
+	<autogen>__KeyToKey__  KeyCode::KEY_7, ModifierFlag::XL,  KeyCode::F7</autogen>
+	<autogen>__KeyToKey__  KeyCode::KEY_7, ModifierFlag::XR,  KeyCode::F7</autogen>
+	<autogen>__KeyToKey__  KeyCode::KEY_8, ModifierFlag::XL,  KeyCode::F8</autogen>
+	<autogen>__KeyToKey__  KeyCode::KEY_8, ModifierFlag::XR,  KeyCode::F8</autogen>
+	<autogen>__KeyToKey__  KeyCode::KEY_9, ModifierFlag::XL,  KeyCode::F9</autogen>
+	<autogen>__KeyToKey__  KeyCode::KEY_9, ModifierFlag::XR,  KeyCode::F9</autogen>
+	<autogen>__KeyToKey__  KeyCode::KEY_0, ModifierFlag::XL,  KeyCode::F10</autogen>
+	<autogen>__KeyToKey__  KeyCode::KEY_0, ModifierFlag::XR,  KeyCode::F10</autogen>
+	<autogen>__KeyToKey__  KeyCode::MINUS, ModifierFlag::XL,  KeyCode::F11</autogen>
+	<autogen>__KeyToKey__  KeyCode::MINUS, ModifierFlag::XR,  KeyCode::F11</autogen>
+	<autogen>__KeyToKey__  KeyCode::JIS_HAT, ModifierFlag::XL,  KeyCode::F12</autogen>
+	<autogen>__KeyToKey__  KeyCode::JIS_HAT, ModifierFlag::XR,  KeyCode::F12</autogen>
+	</item>
+
+
+	<item>
+	<name>Mouse movements</name>
+	<appendix>Mouse movements</appendix>
+	<identifier>mousemoe.minizen.sx</identifier>
+	<autogen>__KeyToKey__  KeyCode::E,ModifierFlag::XL, KeyCode::VK_MOUSEKEY_UP,ModifierFlag::XL</autogen>
+	<autogen>__KeyToKey__  KeyCode::S,ModifierFlag::XL, KeyCode::VK_MOUSEKEY_LEFT,ModifierFlag::XL</autogen>
+	<autogen>__KeyToKey__  KeyCode::D,ModifierFlag::XL, KeyCode::VK_MOUSEKEY_DOWN,ModifierFlag::XL</autogen>
+	<autogen>__KeyToKey__  KeyCode::F,ModifierFlag::XL, KeyCode::VK_MOUSEKEY_RIGHT,ModifierFlag::XL</autogen>
+	</item>
+
+	<item>
+	<name>Mouse</name>
+	<appendix>Mouse with XL</appendix>
+	<identifier>mouse.minizen.sx</identifier>
+	<autogen>__KeyToKey__  KeyCode::A, ModifierFlag::XL,  KeyCode::VK_MOUSEKEY_BUTTON_LEFT, ModifierFlag::XL</autogen>
+	<autogen>__KeyToKey__  KeyCode::Z, ModifierFlag::XL,  KeyCode::VK_MOUSEKEY_BUTTON_RIGHT, ModifierFlag::XL</autogen>
+	<autogen>__KeyToKey__  KeyCode::G, ModifierFlag::XL,  KeyCode::VK_MOUSEKEY_BUTTON_MIDDLE, ModifierFlag::XL</autogen>
+	<autogen>__KeyToKey__  KeyCode::T, ModifierFlag::XL,  KeyCode::VK_MOUSEKEY_SCROLL_DOWN, ModifierFlag::XL</autogen>
+	<autogen>__KeyToKey__  KeyCode::V, ModifierFlag::XL,  KeyCode::VK_MOUSEKEY_SCROLL_UP, ModifierFlag::XL</autogen>
+	</item>
+
+	</item>
+	</root>

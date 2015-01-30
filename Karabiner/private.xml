@@ -135,6 +135,22 @@
 	<autogen>__KeyToKey__  KeyCode::JIS_HAT, ModifierFlag::XR,  KeyCode::F12</autogen>
 	</item>
 
+	<item>
+		<name>Symbols</name>
+		<appendix>Symbols</appendix>
+		<identifier>symbol.minizen.sx</identifier>
+
+		<autogen>__KeyToKey__ KeyCode::J,ModifierFlag::XL | ModifierFlag::SHIFT_L,  KeyCode::COMMA,ModifierFlag::SHIFT_L</autogen>
+		<autogen>__KeyToKey__ KeyCode::I,ModifierFlag::XL | ModifierFlag::SHIFT_L,  KeyCode::DOT,ModifierFlag::SHIFT_L</autogen>
+		<autogen>__KeyToKey__ KeyCode::J,ModifierFlag::XL,  KeyCode::KEY_8,ModifierFlag::SHIFT_L</autogen>
+		<autogen>__KeyToKey__ KeyCode::I,ModifierFlag::XL,  KeyCode::KEY_9,ModifierFlag::SHIFT_L</autogen>
+		<autogen>__KeyToKey__ KeyCode::K,ModifierFlag::XL,  KeyCode::BRACKET_RIGHT,ModifierFlag::SHIFT_L</autogen>
+		<autogen>__KeyToKey__ KeyCode::L,ModifierFlag::XL,  KeyCode::BACKSLASH,ModifierFlag::SHIFT_L</autogen>
+		<autogen>__KeyToKey__ KeyCode::K,ModifierFlag::XL | ModifierFlag::SHIFT_L ,  KeyCode::BRACKET_RIGHT</autogen>
+		<autogen>__KeyToKey__ KeyCode::L,ModifierFlag::XL | ModifierFlag::SHIFT_L ,  KeyCode::BACKSLASH</autogen>
+		<autogen>__KeyToKey__ KeyCode::X,ModifierFlag::XR,KeyCode::QUOTE</autogen>
+
+	</item>
 
 	<item>
 	<name>Mouse movements</name>

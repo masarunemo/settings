@@ -7,7 +7,7 @@ HISTFILE=~/.zsh_history
 HISTSIZE=100000
 SAVEHIST=100000
 setopt autocd extendedglob
-bindkey -v
+#bindkey -v
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 
@@ -58,3 +58,7 @@ zle -N history-beginning-search-forward-end history-search-end
 bindkey "^P" history-beginning-search-backward-end
 bindkey "^N" history-beginning-search-forward-end
 #==============ここまで=================
+
+bindkey "\e[3~" delete-char
+bindkey "\e[H" beginning-of-line
+bindkey "\e[F" end-of-line

@@ -15,15 +15,15 @@
 <appendix>SX modifiers</appendix>
 <identifier>base.sx</identifier>
 
-	<!--
-	<device_only>
-	DeviceVendor::APPLE_INC,DeviceProduct::Apple_internal_keyboard
-	</device_only>
-	-->
+<!--
+<device_only>
+DeviceVendor::APPLE_INC,DeviceProduct::Apple_internal_keyboard
+</device_only>
+-->
 
-	<autogen>
-	__KeyOverlaidModifier__
-	KeyCode::JIS_KANA,
+<autogen>
+__KeyOverlaidModifier__
+KeyCode::JIS_KANA,
 	KeyCode::VK_MODIFIER_XR,
 	KeyCode::JIS_KANA
 	</autogen>
@@ -72,22 +72,22 @@
 	<autogen>__KeyToKey__  KeyCode::D, ModifierFlag::XR2,  KeyCode::CURSOR_DOWN</autogen>
 	<autogen>__KeyToKey__  KeyCode::F, ModifierFlag::XR2,  KeyCode::CURSOR_RIGHT</autogen>
 	<autogen>__KeyToKey__  KeyCode::J, ModifierFlag::XR,  KeyCode::FORWARD_DELETE</autogen>
-    
+
 	<autogen>__KeyToKey__  KeyCode::I, ModifierFlag::XR,  KeyCode::CURSOR_LEFT ,ModifierFlag::COMMAND_L </autogen>
 	<autogen>__KeyToKey__  KeyCode::K, ModifierFlag::XR,  KeyCode::CURSOR_RIGHT ,ModifierFlag::COMMAND_L</autogen>
-    <autogen>__KeyToKey__  KeyCode::O, ModifierFlag::XR,  KeyCode::PAGEUP,ModifierFlag::OPTION_L</autogen>
-    <autogen>__KeyToKey__  KeyCode::L, ModifierFlag::XR,  KeyCode::PAGEDOWN,ModifierFlag::OPTION_L</autogen>
+	<autogen>__KeyToKey__  KeyCode::O, ModifierFlag::XR,  KeyCode::PAGEUP,ModifierFlag::OPTION_L</autogen>
+	<autogen>__KeyToKey__  KeyCode::L, ModifierFlag::XR,  KeyCode::PAGEDOWN,ModifierFlag::OPTION_L</autogen>
 	</item>
 
 	<item>
-    <name>Enter/Backspace/Delete/Tab</name>
+	<name>Enter/Backspace/Delete/Tab</name>
 	<appendix>Enter Backspace</appendix>
 	<identifier>basic.minizen.sx</identifier>
-    <autogen>__KeyToKey__  KeyCode::SEMICOLON, ModifierFlag::XR,  KeyCode::RETURN</autogen>
-    <autogen>__KeyToKey__  KeyCode::SPACE, ModifierFlag::XR,  KeyCode::DELETE</autogen>
+	<autogen>__KeyToKey__  KeyCode::SEMICOLON, ModifierFlag::XR,  KeyCode::RETURN</autogen>
+	<autogen>__KeyToKey__  KeyCode::SPACE, ModifierFlag::XR,  KeyCode::DELETE</autogen>
 	<autogen>__KeyToKey__  KeyCode::SPACE, ModifierFlag::XR2,  KeyCode::DELETE</autogen>
-    <autogen>__KeyToKey__  KeyCode::SPACE, ModifierFlag::XL,  KeyCode::TAB</autogen>
-    </item>
+	<autogen>__KeyToKey__  KeyCode::SPACE, ModifierFlag::XL,  KeyCode::TAB</autogen>
+	</item>
 
 	<item>
 	<name>Ten Key</name>
@@ -135,6 +135,22 @@
 	<autogen>__KeyToKey__  KeyCode::JIS_HAT, ModifierFlag::XR,  KeyCode::F12</autogen>
 	</item>
 
+	<item>
+	<name>Symbols</name>
+	<appendix>Symbols</appendix>
+	<identifier>symbol.minizen.sx</identifier>
+
+	<autogen>__KeyToKey__ KeyCode::J,ModifierFlag::XL | ModifierFlag::SHIFT_L,  KeyCode::COMMA,ModifierFlag::SHIFT_L</autogen>
+	<autogen>__KeyToKey__ KeyCode::I,ModifierFlag::XL | ModifierFlag::SHIFT_L,  KeyCode::DOT,ModifierFlag::SHIFT_L</autogen>
+	<autogen>__KeyToKey__ KeyCode::J,ModifierFlag::XL,  KeyCode::KEY_8,ModifierFlag::SHIFT_L</autogen>
+	<autogen>__KeyToKey__ KeyCode::I,ModifierFlag::XL,  KeyCode::KEY_9,ModifierFlag::SHIFT_L</autogen>
+	<autogen>__KeyToKey__ KeyCode::K,ModifierFlag::XL,  KeyCode::BRACKET_RIGHT,ModifierFlag::SHIFT_L</autogen>
+	<autogen>__KeyToKey__ KeyCode::L,ModifierFlag::XL,  KeyCode::BACKSLASH,ModifierFlag::SHIFT_L</autogen>
+	<autogen>__KeyToKey__ KeyCode::K,ModifierFlag::XL | ModifierFlag::SHIFT_L ,  KeyCode::BRACKET_RIGHT</autogen>
+	<autogen>__KeyToKey__ KeyCode::L,ModifierFlag::XL | ModifierFlag::SHIFT_L ,  KeyCode::BACKSLASH</autogen>
+	<autogen>__KeyToKey__ KeyCode::X,ModifierFlag::XR,KeyCode::QUOTE</autogen>
+
+	</item>
 
 	<item>
 	<name>Mouse movements</name>

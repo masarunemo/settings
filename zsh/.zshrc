@@ -1,6 +1,6 @@
 #プロンプト
 PROMPT='[%F{magenta}%B%n%b%f@%F{blue}%m%u%f %F{green}%~%f]# '
-RPROMPT='[%F{green}%D %T%f]'
+#RPROMPT='[%F{green}%D %T%f]'
 
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.zsh_history
@@ -10,7 +10,6 @@ setopt autocd extendedglob
 bindkey -v
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '/home/nemoto/.zshrc'
 
 autoload -Uz compinit
 compinit
@@ -48,3 +47,14 @@ if [ -e zsh_command_not_found ]; then
 fi
 
 alias la='ls -la'
+
+#==============ここから=================
+#入力途中の履歴補完を有効化する
+autoload history-search-end
+zle -N history-beginning-search-backward-end history-search-end
+zle -N history-beginning-search-forward-end history-search-end
+
+#入力途中の履歴補完
+bindkey "^P" history-beginning-search-backward-end
+bindkey "^N" history-beginning-search-forward-end
+#==============ここまで=================

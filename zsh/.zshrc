@@ -62,3 +62,5 @@ bindkey "^N" history-beginning-search-forward-end
 bindkey "\e[3~" delete-char
 bindkey "\e[H" beginning-of-line
 bindkey "\e[F" end-of-line
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
